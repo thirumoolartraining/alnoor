@@ -21,7 +21,7 @@ export default function Shop() {
   const [selectedCategory, setSelectedCategory] = useState(
     searchParams.get("category") || "All"
   );
-  const [priceRange, setPriceRange] = useState([0, 50]);
+  const [priceRange, setPriceRange] = useState([0, 1000]);
   const [showExportOnly, setShowExportOnly] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
 
@@ -123,7 +123,7 @@ export default function Shop() {
                       <Slider
                         value={priceRange}
                         onValueChange={setPriceRange}
-                        max={50}
+                        max={1000}
                         min={0}
                         step={1}
                         className="w-full"
