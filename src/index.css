@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Al Noor Chicken & Mutton Center Design System 
+Professional halal meat business with trustworthy branding
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    /* Primary: Deep Red (#C62828) for CTAs, headers */
+    --primary: 0 70% 47%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 0 70% 42%;
+
+    /* Secondary: Soft Background Peach (#FBE9E7) */
+    --secondary: 14 67% 95%;
+    --secondary-foreground: 0 70% 47%;
+
+    /* Accent: Dark Green (#388E3C) for success, trust badges */
+    --accent: 125 48% 39%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 125 48% 34%;
+
+    --muted: 0 0% 88%;
+    --muted-foreground: 0 0% 46%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 70% 47%;
+
+    /* Success states */
+    --success: 125 48% 39%;
+    --success-foreground: 0 0% 98%;
+
+    /* Warning states */
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 13%;
+
+    /* Brand gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+
+    /* Shadows with brand colors */
+    --shadow-brand: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-accent: 0 8px 25px -8px hsl(var(--accent) / 0.15);
+    --shadow-card: 0 4px 12px -4px hsl(0 0% 0% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 70% 55%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 0 70% 50%;
+
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 95%;
+
+    --accent: 125 48% 45%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 125 48% 40%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 63%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 0 70% 55%;
+
+    --success: 125 48% 45%;
+    --success-foreground: 0 0% 98%;
+
+    --warning: 45 93% 55%;
+    --warning-foreground: 0 0% 13%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+
+    --shadow-brand: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-accent: 0 8px 25px -8px hsl(var(--accent) / 0.2);
+    --shadow-card: 0 4px 12px -4px hsl(0 0% 0% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Hero button variant */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+
+  /* Trust badge styles */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  /* Product card hover effects */
+  .product-card {
+    @apply bg-card border border-border rounded-lg overflow-hidden transition-all duration-300 hover:shadow-brand hover:-translate-y-1;
+  }
+
+  /* Export inquiry highlight */
+  .export-highlight {
+    @apply bg-gradient-to-r from-accent/20 to-primary/20 border border-accent/30 rounded-lg p-4;
+  }
+
+  /* Category card styles */
+  .category-card {
+    @apply bg-gradient-to-br from-secondary to-white border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-accent hover:scale-105 cursor-pointer;
+  }
+
+  /* Hero text gradient */
+  .hero-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  /* Floating animation */
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Pulse animation for CTAs */
+  .pulse-cta {
+    animation: pulse-cta 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-cta {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7); }
+    70% { box-shadow: 0 0 0 10px hsl(var(--primary) / 0); }
+  }
+}
