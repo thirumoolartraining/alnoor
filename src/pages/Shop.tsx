@@ -165,37 +165,41 @@ export default function Shop() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
-                <Card key={product.id} className="product-card group">
+                <Card key={product.id} className="product-card group flex flex-col h-full">
                   <div className="aspect-square overflow-hidden rounded-t-lg">
                     <img
                       src={product.thumbnail}
                       alt={product.name}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       loading="lazy"
+                      onError={(e) => {
+                        // Fallback image in case the thumbnail fails to load
+                        e.currentTarget.src = '/images/placeholder.jpg';
+                      }}
                     />
                   </div>
                   
-                  <CardContent className="p-4">
-                    <div className="flex items-start justify-between mb-2">
-                      <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
+                  <CardContent className="p-4 flex flex-col flex-grow">
+                    <div className="flex items-start justify-between mb-2 min-h-[3rem]">
+                      <h3 className="font-semibold text-lg group-hover:text-primary transition-colors line-clamp-2">
                         <Link to={`/product/${product.id}`}>
                           {product.name}
                         </Link>
                       </h3>
                       {product.exportAvailable && (
-                        <Badge variant="secondary" className="ml-2 bg-accent/10 text-accent">
+                        <Badge variant="secondary" className="ml-2 bg-accent/10 text-accent flex-shrink-0">
                           <Globe className="w-3 h-3 mr-1" />
                           Export
                         </Badge>
                       )}
                     </div>
                     
-                    <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2 flex-grow">
                       {product.description}
                     </p>
                     
-                    <div className="flex items-center justify-between mb-4">
-                      <div>
+                    <div className="flex items-center justify-between mt-auto mb-4">
+                      <div className="flex items-baseline">
                         <span className="text-2xl font-bold text-primary">₹{product.price}</span>
                         <span className="text-sm text-muted-foreground ml-1">{product.unit}</span>
                       </div>
