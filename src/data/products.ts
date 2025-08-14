@@ -29,7 +29,7 @@ export const products: Product[] = [
   {
     id: 'chicken-breast',
     name: 'Chicken Breast (Boneless)',
-    price: 350,
+    price: 310,
     images: generateProductImages('chicken-breast'),
     thumbnail: getThumbnail('chicken-breast'),
     category: 'Chicken',
@@ -40,7 +40,7 @@ export const products: Product[] = [
   {
     id: 'chicken-thighs',
     name: 'Chicken Thighs',
-    price: 280,
+    price: 300,
     images: generateProductImages('chicken-thighs'),
     thumbnail: getThumbnail('chicken-thighs'),
     category: 'Chicken',
@@ -51,7 +51,7 @@ export const products: Product[] = [
   {
     id: 'chicken-wings',
     name: 'Chicken Wings',
-    price: 320,
+    price: 260,
     images: generateProductImages('chicken-wings'),
     thumbnail: getThumbnail('chicken-wings'),
     category: 'Chicken',
@@ -62,7 +62,7 @@ export const products: Product[] = [
   {
     id: 'chicken-drumsticks',
     name: 'Chicken Drumsticks',
-    price: 270,
+    price: 290,
     images: generateProductImages('chicken-drumsticks'),
     thumbnail: getThumbnail('chicken-drumsticks'),
     category: 'Chicken',
@@ -73,7 +73,7 @@ export const products: Product[] = [
   {
     id: 'chicken-mince',
     name: 'Chicken Mince',
-    price: 300,
+    price: 240,
     images: generateProductImages('chicken-mince'),
     thumbnail: getThumbnail('chicken-mince'),
     category: 'Chicken',
@@ -86,7 +86,7 @@ export const products: Product[] = [
   {
     id: 'mutton-leg',
     name: 'Mutton Leg (Bone-in)',
-    price: 800,
+    price: 840,
     images: generateProductImages('mutton-leg'),
     thumbnail: getThumbnail('mutton-leg'),
     category: 'Mutton',
@@ -97,7 +97,7 @@ export const products: Product[] = [
   {
     id: 'mutton-shoulder',
     name: 'Mutton Shoulder',
-    price: 750,
+    price: 880,
     images: generateProductImages('mutton-shoulder'),
     thumbnail: getThumbnail('mutton-shoulder'),
     category: 'Mutton',
@@ -108,7 +108,7 @@ export const products: Product[] = [
   {
     id: 'mutton-chops',
     name: 'Mutton Chops',
-    price: 32.99,
+    price: 920,
     images: generateProductImages('mutton-chops'),
     thumbnail: getThumbnail('mutton-chops'),
     category: 'Mutton',
@@ -119,7 +119,7 @@ export const products: Product[] = [
   {
     id: 'mutton-mince',
     name: 'Mutton Mince (Fresh)',
-    price: 22.99,
+    price: 900,
     images: generateProductImages('mutton-mince'),
     thumbnail: getThumbnail('mutton-mince'),
     category: 'Mutton',
@@ -130,7 +130,7 @@ export const products: Product[] = [
   {
     id: 'mutton-curry',
     name: 'Mutton Curry Cut',
-    price: 26.99,
+    price: 860,
     images: generateProductImages('mutton-curry'),
     thumbnail: getThumbnail('mutton-curry'),
     category: 'Mutton',
@@ -141,7 +141,7 @@ export const products: Product[] = [
   {
     id: 'mutton-keema',
     name: 'Mutton Keema',
-    price: 25.99,
+    price: 880,
     images: generateProductImages('mutton-keema'),
     thumbnail: getThumbnail('mutton-keema'),
     category: 'Mutton',
@@ -152,7 +152,7 @@ export const products: Product[] = [
   {
     id: 'mutton-biryani',
     name: 'Mutton Biryani Cut',
-    price: 27.99,
+    price: 900,
     images: generateProductImages('mutton-biryani'),
     thumbnail: getThumbnail('mutton-biryani'),
     category: 'Mutton',
@@ -163,7 +163,7 @@ export const products: Product[] = [
   {
     id: 'mutton-ribs',
     name: 'Mutton Ribs',
-    price: 26.99,
+    price: 850,
     images: generateProductImages('mutton-ribs'),
     thumbnail: getThumbnail('mutton-ribs'),
     category: 'Mutton',
@@ -174,7 +174,7 @@ export const products: Product[] = [
   {
     id: 'mutton-boneless',
     name: 'Mutton Boneless Cubes',
-    price: 29.99,
+    price: 950,
     images: generateProductImages('mutton-boneless'),
     thumbnail: getThumbnail('mutton-boneless'),
     category: 'Mutton',
@@ -187,7 +187,7 @@ export const products: Product[] = [
   {
     id: 'lamb-rack',
     name: 'Lamb Rack (Premium)',
-    price: 45.99,
+    price: 1200,
     images: generateProductImages('lamb-rack'),
     thumbnail: getThumbnail('lamb-rack'),
     category: 'Specialty',
@@ -198,7 +198,7 @@ export const products: Product[] = [
   {
     id: 'chicken-liver',
     name: 'Chicken Liver (Fresh)',
-    price: 8.99,
+    price: 180,
     images: generateProductImages('chicken-liver'),
     thumbnail: getThumbnail('chicken-liver'),
     category: 'Offals',
@@ -209,7 +209,7 @@ export const products: Product[] = [
   {
     id: 'mutton-kidney',
     name: 'Mutton Kidney',
-    price: 12.99,
+    price: 450,
     images: generateProductImages('mutton-kidney'),
     thumbnail: getThumbnail('mutton-kidney'),
     category: 'Offals',
@@ -228,8 +228,8 @@ export const categories = [
 ];
 
 export const priceRanges = [
-  { label: 'Under $15', min: 0, max: 15 },
-  { label: '$15 - $25', min: 15, max: 25 },
-  { label: '$25 - $35', min: 25, max: 35 },
-  { label: 'Above $35', min: 35, max: Infinity }
+  { label: 'Under ₹300', min: 0, max: 300 },
+  { label: '₹300 - ₹600', min: 300, max: 600 },
+  { label: '₹600 - ₹900', min: 600, max: 900 },
+  { label: 'Above ₹900', min: 900, max: Infinity }
 ];
