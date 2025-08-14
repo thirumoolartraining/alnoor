@@ -18,7 +18,7 @@ export const products: Product[] = [
   {
     id: 'chicken-whole',
     name: 'Whole Chicken (Fresh)',
-    price: 12.99,
+    price: 250,
     images: generateProductImages('chicken-whole'),
     thumbnail: getThumbnail('chicken-whole'),
     category: 'Chicken',
@@ -29,7 +29,7 @@ export const products: Product[] = [
   {
     id: 'chicken-breast',
     name: 'Chicken Breast (Boneless)',
-    price: 18.99,
+    price: 350,
     images: generateProductImages('chicken-breast'),
     thumbnail: getThumbnail('chicken-breast'),
     category: 'Chicken',
@@ -40,7 +40,7 @@ export const products: Product[] = [
   {
     id: 'chicken-thighs',
     name: 'Chicken Thighs',
-    price: 14.99,
+    price: 280,
     images: generateProductImages('chicken-thighs'),
     thumbnail: getThumbnail('chicken-thighs'),
     category: 'Chicken',
@@ -51,7 +51,7 @@ export const products: Product[] = [
   {
     id: 'chicken-wings',
     name: 'Chicken Wings',
-    price: 16.99,
+    price: 320,
     images: generateProductImages('chicken-wings'),
     thumbnail: getThumbnail('chicken-wings'),
     category: 'Chicken',
@@ -62,7 +62,7 @@ export const products: Product[] = [
   {
     id: 'chicken-drumsticks',
     name: 'Chicken Drumsticks',
-    price: 13.99,
+    price: 270,
     images: generateProductImages('chicken-drumsticks'),
     thumbnail: getThumbnail('chicken-drumsticks'),
     category: 'Chicken',
@@ -73,7 +73,7 @@ export const products: Product[] = [
   {
     id: 'chicken-mince',
     name: 'Chicken Mince',
-    price: 15.99,
+    price: 300,
     images: generateProductImages('chicken-mince'),
     thumbnail: getThumbnail('chicken-mince'),
     category: 'Chicken',
@@ -86,7 +86,7 @@ export const products: Product[] = [
   {
     id: 'mutton-leg',
     name: 'Mutton Leg (Bone-in)',
-    price: 28.99,
+    price: 800,
     images: generateProductImages('mutton-leg'),
     thumbnail: getThumbnail('mutton-leg'),
     category: 'Mutton',
@@ -97,7 +97,7 @@ export const products: Product[] = [
   {
     id: 'mutton-shoulder',
     name: 'Mutton Shoulder',
-    price: 24.99,
+    price: 750,
     images: generateProductImages('mutton-shoulder'),
     thumbnail: getThumbnail('mutton-shoulder'),
     category: 'Mutton',
