@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Globe, Truck, Package, Shield, MapPin, Building, Users, FileText } from "lucide-react";
 import { products } from "@/data/products";
 import { toast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hero-butcher-shop.jpg";
+import heroImage from "@/assets/hero.png";
 
 export default function Export() {
   const [searchParams] = useSearchParams();

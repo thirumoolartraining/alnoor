@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Award, Users, Globe, Truck, Package } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-butcher-shop.jpg";
+import heroImage from "@/assets/hero.png";
 import certificationsImage from "@/assets/certifications.jpg";
 
 export default function About() {

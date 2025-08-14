@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Shield, Truck, Package, Zap, Globe, Award } from "lucide-react";
-import heroImage from "@/assets/hero-butcher-shop.jpg";
+import heroImage from "@/assets/hero.png";
 import chickenImage from "@/assets/chicken-products.jpg";
 import muttonImage from "@/assets/mutton-products.jpg";
 import certificationsImage from "@/assets/certifications.jpg";
