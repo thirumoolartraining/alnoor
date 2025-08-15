@@ -109,7 +109,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
           <p>© {currentYear} Al Noor Meat Center. All rights reserved.</p>
-          <p className="mt-2">FSSAI License No: 12345678000000 | GSTIN: 29AABCA1234M1Z1</p>
+          <p className="mt-2">FSSAI License No: 12425008002474 | GSTIN: 33AJHPA6671M1Z2</p>
         </div>
       </div>
     </footer>
