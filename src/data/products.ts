@@ -127,28 +127,6 @@ export const products: Product[] = [
     exportAvailable: true,
     description: 'Freshly ground mutton mince, great for kebabs, koftas, and traditional dishes.'
   },
-  {
-    id: 'chicken-liver',
-    name: 'Chicken Liver',
-    price: 8.99,
-    images: generateProductImages('chicken-liver'),
-    thumbnail: getThumbnail('chicken-liver'),
-    category: 'Offals',
-    unit: 'per kg',
-    exportAvailable: false,
-    description: 'Fresh chicken liver, rich in nutrients, perfect for pâtés and traditional dishes.'
-  },
-  {
-    id: 'mutton-kidney',
-    name: 'Mutton Kidney',
-    price: 12.99,
-    images: generateProductImages('mutton-kidney'),
-    thumbnail: getThumbnail('mutton-kidney'),
-    category: 'Offals',
-    unit: 'per kg',
-    exportAvailable: false,
-    description: 'Fresh mutton kidney, traditional ingredient for specialty dishes and stews.'
-  }
 ];
 
 export const categories = [
